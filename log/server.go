@@ -7,14 +7,14 @@ import (
 	"os"
 )
 
-//takes the content of http requests coming in and write that to the log
+//takes the content of http requests coming in and write the content of http requests to the log
 
-var log *stlog.Logger //handle th logging for our application
+var log *stlog.Logger //handle the logging for our application
 
 type fileLog string //handle actual writing to the file system
 
 func (fl fileLog) Write(data []byte) (int, error) {
-	f, err := os.OpenFile(string(fl), os.O_CREATE|os.O_WRONLY|os.O_APPEND, 06000) //path where we gonna write log to
+	f, err := os.OpenFile(string(fl), os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0600) //path where we gonna write log to
 	if err != nil {
 		return 0, err
 	}

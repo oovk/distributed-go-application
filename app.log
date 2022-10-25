@@ -1,0 +1,10 @@
+2022/10/10 10:13:17 {
+        "productId": 1,
+        "manufacturer": "Johns-Jenkins",
+        "sku": "p5z343vdS",
+        "upc": "939581000000",
+        "pricePerUnit": "497.45",
+        "quantityOnHand": 973,
+        "productName": "sticky note"
+}
+2022/10/10 10:13:48 this is getting logged
